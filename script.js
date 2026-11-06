@@ -264,7 +264,7 @@
     const name = document.getElementById('name')?.value || '';
     const email = document.getElementById('email')?.value || '';
     const message = document.getElementById('message')?.value || '';
-    const mailtoLink = `mailto:alaaqutishat98@gmail.com?subject=Portfolio Inquiry from ${encodeURIComponent(name)}&body=${encodeURIComponent(message)}%0A%0A---%0AFrom: ${encodeURIComponent(name)} (${encodeURIComponent(email)})`;
+    const mailtoLink = `mailto:a.a.qutishat@gmail.com?subject=Portfolio Inquiry from ${encodeURIComponent(name)}&body=${encodeURIComponent(message)}%0A%0A---%0AFrom: ${encodeURIComponent(name)} (${encodeURIComponent(email)})`;
     window.location.href = mailtoLink;
     contactForm.reset();
   }
