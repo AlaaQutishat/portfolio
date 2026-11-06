@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edusphere — Tri-App School & Campus Ecosystem | Alaa Qutishat</title>
+    <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body class="project-standalone-page" data-project-key="edusphere" data-project-slug="edusphere-suite">
+    <script>
+        window.PROJECT_PAGE = { basePath: "../../" };
+        (function(){var t=localStorage.getItem("aq-portfolio-theme")||"dark";if(t==="light")document.body.classList.add("theme-light");})();
+    </script>
+
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="../../index.html#hero" class="nav-logo">
+                <span class="nav-logo__badge" aria-hidden="true">AQ</span>
+                <span data-i18n="common.name">Alaa Qutishat</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../../index.html#about" data-i18n="nav.about">About</a></li>
+                <li><a href="../../index.html#skills" data-i18n="nav.skills">Skills</a></li>
+                <li><a href="../../index.html#services" data-i18n="nav.services">Services</a></li>
+                <li><a href="../../index.html#projects" class="active" data-i18n="nav.projects">Projects</a></li>
+                <li><a href="../../index.html#experience" data-i18n="nav.experience">Experience</a></li>
+                <li><a href="../../index.html#education" data-i18n="nav.education">Education</a></li>
+                <li><a href="../../index.html#tools" data-i18n="nav.tools">Tools</a></li>
+                <li><a href="../../index.html#contact" data-i18n="nav.contact">Contact</a></li>
+            </ul>
+            <div class="nav-trailing">
+                <div class="nav-actions">
+                    <button type="button" class="nav-action nav-action--lang" id="langToggle" title="EN / العربية" aria-label="Toggle language">
+                        <span class="nav-action__lang mono" id="langCurrent">EN</span>
+                    </button>
+                    <button type="button" class="nav-action nav-action--theme" id="themeToggle" title="Toggle color theme" aria-label="Toggle theme">
+                        <span class="nav-action__icon-slot" aria-hidden="true">
+                            <svg class="nav-action__svg nav-action__svg--sun active" id="themeIconSun" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="3.25" stroke="currentColor" stroke-width="1.75"/>
+                                <path stroke="currentColor" stroke-width="1.75" stroke-linecap="round" d="M12 4v2.5M12 17.5V20M4 12h2.5M17.5 12H20"/>
+                            </svg>
+                            <svg class="nav-action__svg nav-action__svg--moon" id="themeIconMoon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                            </svg>
+                        </span>
+                        <span class="visually-hidden" id="themeCurrent">Dark</span>
+                    </button>
+                </div>
+                <button type="button" class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navMenu">
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="project-page-main">
+        <div class="container project-page-shell">
+            <a href="../../index.html#projects" class="project-page-back mono" data-i18n="projects.backToProjects">← Back to Projects</a>
+            <article id="projectPageRoot" class="project-page-article"></article>
+        </div>
+    </main>
+
+    <div id="shotLightbox" class="shot-lightbox" role="dialog" aria-modal="true" aria-label="Screenshot preview" hidden>
+        <div class="shot-lightbox__backdrop" data-close-shot-lightbox tabindex="-1"></div>
+        <div class="shot-lightbox__panel" role="document">
+            <div class="shot-lightbox__header">
+                <button type="button" class="project-page-back mono" data-close-shot-lightbox data-i18n="projects.closePreview">✕ Close preview</button>
+            </div>
+            <figure class="shot-lightbox__figure">
+                <img id="shotLightboxImg" class="shot-lightbox__img" src="" alt="" decoding="async">
+                <figcaption id="shotLightboxCaption" class="shot-lightbox__caption"></figcaption>
+            </figure>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-copyright" data-i18n="footer.copyright">Alaa Qutishat · Senior Mobile Application Developer</p>
+            <p class="footer-subtitle" data-i18n="footer.subtitle">Flutter · Dart · Clean Architecture · M.Sc. in Artificial Intelligence</p>
+            <div class="footer-links">
+                <a href="mailto:alaaqutishat98@gmail.com">Email</a>
+                <a href="https://www.linkedin.com/in/alaa-qutishat/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://github.com/AlaaQutishat" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="../../Alaa_Qutishat_CV.pdf" download="Alaa_Qutishat_CV.pdf" data-i18n="hero.downloadCv">Download CV</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../i18n.js"></script>
+    <script src="../../projects-screenshots.js"></script>
+    <script src="../../project-routes.js"></script>
+    <script src="../../project-detail.js"></script>
+    <script src="../../project-page.js"></script>
+</body>
+</html>
