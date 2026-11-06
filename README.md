@@ -14,3 +14,4 @@ Personal engineering portfolio and architectural case studies for **Alaa Qutisha
 6. **EIHAL — Dental Tele-Health & Clinical Referral Network** (`com.eihal.eihalplatform`)
 7. **Wateen — Healthcare, Clinic Booking & Family EHR Platform** (`com.beyond.wateen`)
 8. **Uncle Osaka — B2B/B2C FMCG & Grocery E-Commerce Platform** (`com.wewebit.uncleosakabeta`)
+
